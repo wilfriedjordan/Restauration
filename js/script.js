@@ -104,9 +104,14 @@ const produits = await reponse.json()
         e.currentTarget.classList.add('active')
     })
     //Systeme de geolocalization
-    const map = L.map('map').setView([51.505, -0.09], 13);
+    
 
-
+    const load = document.querySelector(".buttonclik")
+    load.addEventListener('click',function(e){
+        const parrent = document.querySelector('.satisfaction__container')
+        console.log(parrent.classList.add('active'))
+        
+    })
 
 
 

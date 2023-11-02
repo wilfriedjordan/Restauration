@@ -348,3 +348,61 @@ form button{
     border-radius: 1.25rem;
     background-color:$color_default;
 }
+/*_________________section satisfaction_________*/
+
+section.satisfaction{
+    transition: all 0.2s ease-in-out infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    h3{
+        font-family: "Dancing Script";
+        font-size: 3rem;
+        font-weight: 500;
+    }
+    div.satisfaction__container{
+        display: flex;
+        gap: 3rem;
+        img{
+            width: 18.75rem;
+            clip-path: circle(40% at center);
+        }
+
+    }
+    div.img{
+        width: 18.75rem;
+        background-color: #ffbe33;
+        clip-path: circle(41%);
+        span{
+            width: 5rem;
+            height: 5rem;
+
+        }
+    }
+    div.message{
+        width: 32rem;
+        background-color: $textCol;
+        color: white;
+        padding: 0.1rem 1rem;
+        border-radius: 0.5rem;
+    }
+}
+div.direction{
+    display: flex;
+    text-align: center;
+    gap: 1rem;
+    .fas-direction{
+        font-size: 1.5rem;
+        color: $white;
+        padding-top: 1rem;
+        width: 3rem;
+        height: 3rem;
+        background-color: $color_default;
+        clip-path: circle();
+    }
+}
+.active{
+    transition: all 0.2s ease-in-out infinite;
+    transform:translate(-110%,0%);
+}

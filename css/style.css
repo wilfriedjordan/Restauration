@@ -352,4 +352,65 @@ form button {
   font-family: "Open Sans";
   border-radius: 1.25rem;
   background-color: #ffbe33;
+}
+
+/*_________________section satisfaction_________*/
+section.satisfaction {
+  transition: all 0.2s ease-in-out infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+section.satisfaction h3 {
+  font-family: "Dancing Script";
+  font-size: 3rem;
+  font-weight: 500;
+}
+section.satisfaction div.satisfaction__container {
+  display: flex;
+  gap: 3rem;
+}
+section.satisfaction div.satisfaction__container img {
+  width: 18.75rem;
+  -webkit-clip-path: circle(40% at center);
+          clip-path: circle(40% at center);
+}
+section.satisfaction div.img {
+  width: 18.75rem;
+  background-color: #ffbe33;
+  -webkit-clip-path: circle(41%);
+          clip-path: circle(41%);
+}
+section.satisfaction div.img span {
+  width: 5rem;
+  height: 5rem;
+}
+section.satisfaction div.message {
+  width: 32rem;
+  background-color: #1f1f1f;
+  color: white;
+  padding: 0.1rem 1rem;
+  border-radius: 0.5rem;
+}
+
+div.direction {
+  display: flex;
+  text-align: center;
+  gap: 1rem;
+}
+div.direction .fas-direction {
+  font-size: 1.5rem;
+  color: #ffffff;
+  padding-top: 1rem;
+  width: 3rem;
+  height: 3rem;
+  background-color: #ffbe33;
+  -webkit-clip-path: circle();
+          clip-path: circle();
+}
+
+.active {
+  transition: all 0.2s ease-in-out infinite;
+  transform: translate(-110%, 0%);
 }/*# sourceMappingURL=style.css.map */
