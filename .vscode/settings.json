@@ -1,0 +1,12 @@
+{
+    "editor.fontSize": 16,
+    "editor.minimap.scale": 2,
+    "window.density.editorTabHeight": "compact",
+    "window.closeWhenEmpty": false,
+    "window.zoomLevel": -2,
+    "console-ninja.outputMode": "Beside File",
+    "editor.linkedEditing": true,
+    "editor.wordWrap": "on",
+    "window.autoDetectColorScheme": false,
+    "vscode-w3cvalidation.trace.server": "messages"
+}

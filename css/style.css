@@ -1,0 +1,355 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&family=Montserrat:wght@200&family=Open+Sans:ital,wght@1,300&display=swap");
+a {
+  text-decoration: none;
+  color: white;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans";
+}
+
+/*________________________header____________________*/
+header.header {
+  background-image: url("./../images/hero-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 110vh;
+  color: white;
+}
+header.header .header__message {
+  width: 600px;
+  position: relative;
+  top: 15%;
+  font-weight: 600;
+  margin: 55px 90px;
+}
+header.header .header__message h3 {
+  font-size: 2.7rem;
+  font-family: "Dancing Script", "Montserrat";
+  font-weight: 700;
+}
+header.header .header__message a {
+  width: 130px;
+  text-transform: capitalize;
+  text-align: center;
+  display: block;
+  padding: 7px;
+  font-weight: 600;
+  border-radius: 20px;
+  background-color: #ffbe33;
+}
+
+.header__nav h1 {
+  font-family: "Dancing Script", "Montserrat";
+}
+
+.header__nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.header__nav .header__nav__navbar ul {
+  display: flex;
+  gap: 50px;
+}
+.header__nav .header__nav__navbar ul a.active {
+  color: #ffbe33;
+}
+.header__nav .header__nav__user {
+  position: relative;
+  right: 50px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.header__nav .header__nav__user a {
+  width: 130px;
+  text-transform: capitalize;
+  text-align: center;
+  display: block;
+  padding: 7px;
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 20px;
+  background-color: #ffbe33;
+}
+
+.header__nav__navbar li {
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+  text-transform: uppercase;
+  color: white;
+}
+.header__nav__navbar li :hover {
+  color: rgb(236, 159, 16);
+}
+
+.header__nav__navbar a {
+  color: white;
+}
+
+/*________________SECTION REJUCTION______________*/
+section.reduction {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 23px;
+  height: 60vh;
+  color: #ffffff;
+}
+section.reduction .reduction__container {
+  display: flex;
+  height: 12rem;
+  width: 32rem;
+  font-size: 1.3rem;
+  font-family: "Dancing Script";
+  border-radius: 10px;
+  font-weight: 500;
+  padding: 1rem;
+  background-color: #1f1f1f;
+  transition: all 0.2s ease-in-out;
+}
+section.reduction .reduction__container span {
+  font-size: 2.3rem;
+  font-weight: 600;
+  font-family: "Dancing Script", "Montserrat";
+}
+section.reduction .reduction__container a {
+  width: 8.125rem;
+  text-transform: capitalize;
+  text-align: center;
+  display: block;
+  padding: 0.43rem;
+  font-weight: 600;
+  font-family: "Open Sans";
+  border-radius: 1.25rem;
+  background-color: #ffbe33;
+}
+section.reduction .reduction__container img {
+  width: 9.3rem;
+  height: 9.3rem;
+  border: solid 0.31rem #ffbe33;
+  border-radius: 50%;
+}
+
+.reduction__container:hover img {
+  transform: scale(1.1);
+}
+
+/*____________________section articles___________________*/
+section.article {
+  height: 310vh;
+}
+section.article .article__nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+section.article .article__nav h1 {
+  font-size: 2.7rem;
+  font-weight: 700;
+  font-family: "Dancing Script";
+}
+
+button.article__nav__btn {
+  margin: 0.72rem;
+  border: none;
+  background-color: white;
+}
+
+button.active {
+  background-color: #000000;
+  color: #ffffff;
+  width: 3.25rem;
+  height: 1.68rem;
+  border-radius: 1.7rem;
+}
+
+.article__container {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 33rem);
+  margin: 2rem 3rem;
+  align-items: center;
+}
+
+.article__container__row {
+  align-items: center;
+  background-color: #000000;
+  font-size: 0.7rem;
+  font-weight: 600;
+  border-radius: 1rem;
+  width: 24rem;
+  height: 30rem;
+  margin: 18px;
+  transition: all 0.2s ease-in-out;
+}
+.article__container__row .article-img {
+  background-color: #f3f3f3;
+  height: 14rem;
+  border: none;
+  width: 100%;
+  border-radius: 0.3rem 0.3rem 0rem 2rem;
+  text-align: center;
+}
+.article__container__row .article-img img {
+  width: 11rem;
+  height: 8rem;
+  padding: 3rem;
+}
+.article__container__row .article-text {
+  padding: 0.7rem;
+  color: #ffffff;
+  font-size: 0.8rem;
+  text-align: center;
+}
+.article__container__row .article-text p.name {
+  font-size: 1.6rem;
+}
+
+.article__container__row:hover img {
+  transform: scale(1.2);
+}
+
+.article-text > p:first-child {
+  font-size: 1.3rem;
+}
+
+.article-text > p:nth-last-child(2) {
+  font-size: 1.01rem;
+}
+
+button.bay {
+  background-color: #ffbe33;
+  height: 3rem;
+  width: 2rem;
+  border: none;
+  color: #ffffff;
+  -webkit-clip-path: circle();
+          clip-path: circle();
+  position: relative;
+  left: 30%;
+}
+
+button.more {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  text-align: center;
+  border: none;
+  background-color: #ffbe33;
+  color: white;
+  border-radius: 1.87rem;
+  width: 12rem;
+  height: 2.5rem;
+}
+
+/*________________Section About__________________*/
+section.about {
+  background-color: #1f1f1f;
+  color: white;
+  display: flex;
+  height: 800px;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+}
+section.about .about__image {
+  height: 43.75rem;
+}
+section.about .about__image img {
+  height: 100%;
+}
+section.about .about__container {
+  font-size: 1rem;
+  line-height: 1.7rem;
+  font-weight: 600;
+  width: 500px;
+}
+section.about .about__container h2 {
+  font-family: "Dancing Script";
+  font-size: 2.7rem;
+}
+section.about .about__container a {
+  width: 8.125rem;
+  text-transform: capitalize;
+  text-align: center;
+  display: block;
+  padding: 0.43rem;
+  font-weight: 600;
+  font-family: "Open Sans";
+  border-radius: 1.25rem;
+  background-color: #ffbe33;
+}
+
+/*_________________section localisation_________________________*/
+section.localisation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7rem;
+}
+section.localisation div.form {
+  width: 35rem;
+}
+section.localisation div.form h3 {
+  font-family: "Dancing Script";
+  font-size: 1.8rem;
+}
+section.localisation div.form input {
+  margin: 10px;
+  border-radius: 0.3rem;
+  width: 100%;
+  height: 3rem;
+  border: solid 1px;
+}
+section.localisation div.form select {
+  position: relative;
+  left: 13px;
+  width: 100%;
+  height: 3rem;
+  border: 1px solid;
+  border-radius: 0.3rem;
+  background-color: #ffffff;
+}
+section.localisation div.form select option.default {
+  background-color: #f5f5f5;
+}
+section.localisation div.form select :hover {
+  background-color: #f5f5f5;
+}
+section.localisation div#map {
+  height: 20rem;
+  width: 35rem;
+}
+
+select, option {
+  background-color: #f5f5f5;
+}
+
+form button {
+  margin-top: 2rem;
+  width: 10rem;
+  text-transform: capitalize;
+  text-align: center;
+  border: none;
+  padding: 1rem;
+  color: #ffffff;
+  font-weight: 600;
+  font-family: "Open Sans";
+  border-radius: 1.25rem;
+  background-color: #ffbe33;
+}/*# sourceMappingURL=style.css.map */

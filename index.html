@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
+    <script src="./js/script.js" defer></script>
+    <title>Restauration</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__nav">
+            <h1>Foodie`s Corner</h1>
+            <div class="header__nav__navbar">
+                <ul>
+                    <li><a href="" class=" link1 active">Home</a></li>
+                    <li><a href="" class="link2">Menu</a></li>
+                    <li><a href="" class="link3">About</a></li>
+                    <li><a href="" class="link4">BookTable</a></li>
+                </ul>
+            </div>
+            <div class="header__nav__user">
+                <p><i class="fa-solid fa-user"></i></p>
+                <p><i class="fa-solid fa-cart-shopping"></i></p>
+                <p><i class="fa-solid fa-magnifying-glass"></i></p>
+                <a href="">Order Online</a>
+            </div>
+        </div>
+        <div class="header__message">
+            <h3>Fast Food Restaurant</h3>
+            <p>Lorem ipsum dolor, 
+                sit amet consectetur adipisicing elit. 
+                Voluptatibus omnis esse dolor odio tempora. 
+                Suscipit fugiat dolores dolorum illo saepe 
+                culpa tempore reprehenderit quas nesciunt, 
+                architecto accusamus
+            </p>
+            <a href="">Order Now</a>
+        </div>
+    </header> 
+    <section class="reduction">
+        <div class="reduction__container">
+            <img src="./images/o1.jpg" alt="">
+            <section>
+                <p>Tasty Thursday</p>
+                <p><span>20%</span>off</p>
+                <a href="">order Now<i class="fa-solid fa-cart-shopping"></i></a>
+            </section>
+        </div>
+        <div class="reduction__container">
+            <img src="./images/o2.jpg" alt="">
+            <section>
+                <p>Pizza Days</p>
+                <p><span>15%</span>off</p>
+                <a href="">order Now<i class="fa-solid fa-cart-shopping"></i></a>
+            </section>
+        </div>
+    </section> 
+    <section class="article">
+        <div class="article__nav">
+            <h1>Our Menu</h1>
+            <div class="article__btn">
+                <button class="article__nav__btn btn1 active">All</button>
+                <button class="article__nav__btn btn2">Burger</button>
+                <button class="article__nav__btn btn3">Pizza</button>
+                <button class="article__nav__btn btn4">Pasta</button>
+                <button class="article__nav__btn btn5">Fries</button>
+            </div>
+        </div>
+        <div class="article__container"></div>
+        <button class="more">View More</button>
+    </section>
+
+    <section class="about">
+        <div class="about__image">
+            <img src="./images/about-img.png" alt="">
+        </div>
+        <div class="about__container">
+            <h2>We are feane</h2>
+            <p>Lorem, ipsum dolor sit amet 
+                consectetur adipisicing elit. 
+                Doloribus alias iste explicabo molestias quae sunt commodi, 
+                blanditiis totam eius deleniti quia itaque optio atque, 
+                sequi aut obcaecati reiciendis maiores aliquam!
+                Lorem ipsum dolor sit Lorem ipsum dolor sit, amet consectetur 
+                adipisicing elit. Minus, iste!
+            </p>
+            <a href="">Read More</a>
+        </div>
+    </section>
+    <section class="localisation">
+        <div class="form">
+            <h3>Book A Table</h3>
+            <form class="form">
+                <input type="text" autocapitalize="Your Name" required autofocus placeholder="Your Name"><br>
+                <input type="text" autocapitalize="Your Name" required autofocus placeholder="Phone Number"><br>
+                <input type="email" autocapitalize="Your Name" required autofocus placeholder="Your Email" ><br>
+                <select name="Nombre de personne" id="" autocomplete="How many persons?">
+                    <option value="default" class="default">How many persons?</option>
+                    <option value="option1">1</option>
+                    <option value="option2">2</option>
+                    <option value="option3">3</option>
+                    <option value="option4">1</option>
+                    <option value="option5">5</option>
+                </select>
+                <input type="date" >
+                <button>Book Now</button>
+            </form>
+        </div>
+        <div class="carte" id="map" >
+
+        </div>
+    </section>
+</body>
+</html>

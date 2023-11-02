@@ -1,0 +1,128 @@
+[
+    {
+        "id":1,
+        "name":"Delicious pizza",
+        "calories":300,
+        "fat":0,
+        "carbs":0,
+        "protein":0,
+        "description":"lorem ipsum dolor sit amet, consectetur adip lorem ipsum dolor sit amet lorrem sed diam nonum et lorem ipsum dolor sit amet",
+        "price":20,
+        "category":"pizza",
+        "image":"./images/f1.png",
+        "button":""
+
+    },
+    {
+        "id":2,
+        "name":"Delicious burger",
+        "calories":300,
+        "fat":0,
+        "carbs":0,
+        "protein":0,
+        "category":"burger",
+        "description":"lorem ipsum dolor sit amet, consectetur adip lorem ipsum dolor sit amet lorrem sed diam nonum et lorem ipsum dolor sit amet",
+        "price":15,
+        "image":"./images/f2.png",
+        "button":""
+
+    },
+    {
+        "id":3,
+        "name":"Delicious pizza",
+        "calories":300,
+        "fat":0,
+        "carbs":0,
+        "protein":0,
+        "category":"pizza",
+        "description":"lorem ipsum dolor sit amet, consectetur adip lorem ipsum dolor sit amet lorrem sed diam nonum et lorem ipsum dolor sit amet",
+        "price":17,
+        "image":"./images/f3.png",
+        "button":"golo"
+
+    },
+    {
+        "id":4,
+        "name":"Delicious Pasta",
+        "calories":300,
+        "fat":0,
+        "carbs":0,
+        "protein":0,
+        "category":"pasta",
+        "description":"lorem ipsum dolor sit amet, consectetur adip lorem ipsum dolor sit amet lorrem sed diam nonum et lorem ipsum dolor sit amet",
+        "price":18,
+        "image":"./images/f4.png",
+        "button":"vg"
+
+    },
+    {
+        "id":5,
+        "name":"Delicious Fries",
+        "calories":300,
+        "fat":0,
+        "carbs":0,
+        "protein":0,
+        "category":"fries",
+        "description":"lorem ipsum dolor sit amet, consectetur adip lorem ipsum dolor sit amet lorrem sed diam nonum et lorem ipsum dolor sit amet",
+        "price":10,
+        "image":"./images/f5.png",
+        "button":""
+
+    },
+    {
+        "id":6,
+        "name":"Delicious pizza",
+        "calories":300,
+        "fat":0,
+        "carbs":0,
+        "protein":0,
+        "category":"pizza",
+        "description":"lorem ipsum dolor sit amet, consectetur adip lorem ipsum dolor sit amet lorrem sed diam nonum et lorem ipsum dolor sit amet",
+        "price":15,
+        "image":"./images/f6.png",
+        "button":""
+    },
+    {
+        "id":7,
+        "name":"Tasty Burger",
+        "calories":300,
+        "fat":0,
+        "carbs":0,
+        "protein":0,
+        "category":"burger",
+        "description":"lorem ipsum dolor sit amet, consectetur adip lorem ipsum dolor sit amet lorrem sed diam nonum et lorem ipsum dolor sit amet",
+        "price":12,
+        "image":"./images/f7.png",
+        "button":""
+
+    },
+    {
+        "id":8,
+        "name":"Tasty Burger",
+        "calories":300,
+        "fat":0,
+        "carbs":0,
+        "protein":0,
+        "category":"burger",
+        "description":"lorem ipsum dolor sit amet, consectetur adip lorem ipsum dolor sit amet lorrem sed diam nonum et lorem ipsum dolor sit amet",
+        "price":14,
+        "image":"./images/f8.png",
+        "button":""
+
+    },
+    {
+        "id":9,
+        "name":"Delicious Pasta",
+        "calories":300,
+        "fat":0,
+        "carbs":0,
+        "protein":0,
+        "category":"pasta",
+        "description":"lorem ipsum dolor sit amet, consectetur adip lorem ipsum dolor sit amet lorrem sed diam nonum et lorem ipsum dolor sit amet",
+        "price":10,
+        "image":"./images/f9.png",
+        "button":""
+
+    }
+
+]
