@@ -8,5 +8,6 @@
     "editor.linkedEditing": true,
     "editor.wordWrap": "on",
     "window.autoDetectColorScheme": false,
-    "vscode-w3cvalidation.trace.server": "messages"
+    "vscode-w3cvalidation.trace.server": "messages",
+    "compile-hero.disable-compile-files-on-did-save-code": true
 }

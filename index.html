@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./css/style.css">
@@ -22,11 +22,11 @@
         <div class="header__nav">
             <h1>Foodie`s Corner</h1>
             <div class="header__nav__navbar">
-                <ul>
-                    <li><a href="" class=" link1 active">Home</a></li>
-                    <li><a href="" class="link2">Menu</a></li>
-                    <li><a href="" class="link3">About</a></li>
-                    <li><a href="" class="link4">BookTable</a></li>
+                <ul class="list">
+                    <li><a href="./index.html" class=" link1 active">Home</a></li>
+                    <li><a href="./menu.html" class="link2">Menu</a></li>
+                    <li><a href="./about.html" class="link3">About</a></li>
+                    <li><a href="./table.html" class="link4">BookTable</a></li>
                 </ul>
             </div>
             <div class="header__nav__user">
@@ -37,38 +37,50 @@
             </div>
         </div>
         <div class="header__message">
-            <h3>Fast Food Restaurant</h3>
-            <p>Lorem ipsum dolor, 
-                sit amet consectetur adipisicing elit. 
-                Voluptatibus omnis esse dolor odio tempora. 
-                Suscipit fugiat dolores dolorum illo saepe 
-                culpa tempore reprehenderit quas nesciunt, 
-                architecto accusamus
-            </p>
-            <a href="">Order Now</a>
+            <div class="animation">
+                <h3>Fast Food Restaurant</h3>
+                <p>Lorem ipsum dolor, 
+                    sit amet consectetur adipisicing elit. 
+                    Voluptatibus omnis esse dolor odio tempora. 
+                    Suscipit fugiat dolores dolorum illo saepe 
+                    culpa tempore reprehenderit quas nesciunt, 
+                    architecto accusamus
+                </p>
+                <a href="">Order Now</a>
+            </div>
+            <div class="span">
+                <span class="dot dotSpan1"></span>
+                <div class="dots">
+                    <span class="dotSpan2"></span>
+                    <span class="dotSpan3"></span>
+                    <span class="dotSpan4"></span>
+
+                </div>
+            </div>
         </div>
     </header> 
+
     <section class="reduction">
         <div class="reduction__container">
             <img src="./images/o1.jpg" alt="">
-            <section>
+            <div>
                 <p>Tasty Thursday</p>
                 <p><span>20%</span>off</p>
                 <a href="">order Now<i class="fa-solid fa-cart-shopping"></i></a>
-            </section>
+            </div>
         </div>
         <div class="reduction__container">
             <img src="./images/o2.jpg" alt="">
-            <section>
+            <div>
                 <p>Pizza Days</p>
                 <p><span>15%</span>off</p>
                 <a href="">order Now<i class="fa-solid fa-cart-shopping"></i></a>
-            </section>
+            </div>
         </div>
     </section> 
     <section class="article">
         <div class="article__nav">
-            <h1>Our Menu</h1>
+            <h2>Our Menu</h2>
             <div class="article__btn">
                 <button class="article__nav__btn btn1 active">All</button>
                 <button class="article__nav__btn btn2">Burger</button>
@@ -122,29 +134,84 @@
     </section>
     <section class="satisfaction">
         <h3>What says our customers</h3>
-        <div class="satisfaction__container transition">
-            <div class="container__element">
-                <div class="message">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam quam quae recusandae deserunt magni officia mollitia labore, optio, rerum animi consequuntur dolores blanditiis aperiam soluta natus esse veniam facere. Itaque.</p>
+        <div class="div1">
+            <div class="satisfaction__container ">
+                <div class="container__element">
+                    <div class="message">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam quam quae recusandae deserunt magni officia mollitia labore, optio, rerum animi consequuntur dolores blanditiis aperiam soluta natus esse veniam facere. Itaque.</p>
+                    </div>
+                    <div class="img">
+                        <span>E</span>
+                        <img src="./images/client1.jpg" alt="">
+                    </div>
                 </div>
-                <div class="img">
-                    <span>E</span>
-                    <img src="./images/client1.jpg" alt="">
+                <div class="container__element">
+                    <div class="message">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam quam quae recusandae deserunt magni officia mollitia labore, optio, rerum animi consequuntur dolores blanditiis aperiam soluta natus esse veniam facere. Itaque.</p>
+                    </div>
+                    <div class="img">
+                        <span>e</span>
+                        <img src="./images/client2.jpg" alt="">
+                    </div>
                 </div>
             </div>
-            <div class="container__element">
-                <div class="message">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam quam quae recusandae deserunt magni officia mollitia labore, optio, rerum animi consequuntur dolores blanditiis aperiam soluta natus esse veniam facere. Itaque.</p>
+        </div>
+        <div class="div2">
+            <div class="satisfaction__container transition">
+                <div class="container__element">
+                    <div class="message">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam quam quae recusandae deserunt magni officia mollitia labore, optio, rerum animi consequuntur dolores blanditiis aperiam soluta natus esse veniam facere. Itaque.</p>
+                    </div>
+                    <div class="img">
+                        <span>E</span>
+                        <img src="./images/client2.jpg" alt="">
+                    </div>
                 </div>
-                <div class="img">
-                    <span>e</span>
-                    <img src="./images/client2.jpg" alt="">
+                <div class="container__element">
+                    <div class="message">
+                        <p class="paraRed">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam quam quae recusandae deserunt magni officia mollitia labore, optio, rerum animi consequuntur dolores blanditiis aperiam soluta natus esse veniam facere. Itaque.</p>
+                    </div>
+                    <div class="img">
+                        <span>e</span>
+                        <img src="./images/client1.jpg" alt="">
+                    </div>
                 </div>
             </div>
         </div>
         <div class="direction">
-            <p class="fas-direction buttonclik"><i class="fa-solid fa-chevron-left"></i></p>
-            <p class="fas-direction"><i class="fa-solid fa-chevron-right"></i></p>
+            <p class="fas-direction buttonclik1"><i class="fa-solid fa-chevron-left"></i></p>
+            <p class="fas-direction buttonclik2"><i class="fa-solid fa-chevron-right"></i></p>
+        </div>
+    </section>
+    <section class="footer">
+        <div class="footer__conctact">
+            <h4>Contact Us</h4>
+            <div class="iconContact"><i class="fa-solid fa-location-pin"></i><p>localisation</p></div>
+            <div class="iconContact"><i class="fa-solid fa-phone"></i><a href="tel:+237692208956">+237692208956</a></div>
+            <div class="iconContact"><i class="fa-solid fa-envelope"></i><a href="mailto:tankwewilfried5@gmail.com">tankwewilfried5@gmail.com</a></div>
+        </div>
+        <div class="footer__link">
+            <h4>Feane</h4>
+            <p>Lorem ipsum dolor, 
+                sit amet consectetur 
+                adipisicing elit. A, 
+                beatae Lorem ipsum dolor sit amet..
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+            <div class="icons">
+                <i class="fa-brands fa-twitter fas-icons"></i>
+                <i class="fa-brands fa-linkedin fas-icons"></i>
+                <i class="fa-brands fa-discord fas-icons"></i>
+                <i class="fa-brands fa-instagram fas-icons"></i>
+                <i class="fa-brands fa-facebook fas-icons"></i>
+            </div>
+            <p>&copy; 2023 All Lorem ipsum dolor sit amet.</p>
+            <p>&copy; Lorem ipsum dolor sit.</p>
+        </div>
+        <div class="footer__hours">
+            <h4>Opening Hours</h4>
+            <p>Everyday</p>
+            <p>10:00Am-10:00Pm</p>
         </div>
     </section>
 </body>

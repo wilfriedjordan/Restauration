@@ -88,7 +88,8 @@ const produits = await reponse.json()
         document.querySelector(".article__container").innerHTML=""
         update(articleFilter4)
     })
-    //Recuperation et Stylisation des lien de la navbar
+    //Recuperation et Stylisation des lien de la 
+    const linkpa = document.querySelector('.list')
     const link1 = document.querySelector('.link1')
     const link2 = document.querySelector('.link2')
     const link3 = document.querySelector('.link3')
@@ -100,19 +101,46 @@ const produits = await reponse.json()
     })
     link2.addEventListener('click',(e)=>{
         e.preventDefault()
-        console.log(e.currentTarget.parentElement.querySelector('.active'));
+        console.log(e.currentTarget.parentElement.querySelector('.active').classList.remove('active'));
         e.currentTarget.classList.add('active')
     })
     //Systeme de geolocalization
     
-
-    const load = document.querySelector(".buttonclik")
-    load.addEventListener('click',function(e){
-        const parrent = document.querySelector('.satisfaction__container')
-        console.log(parrent.classList.add('active'))
+    /**
+     * creation des annimation et les transions
+     */
+    const transition1 = document.querySelector(".buttonclik1")
+    transition1.addEventListener('click',function(e){
+        const parrent = document.querySelector('.div1')
+        console.log(parrent.classList.add('cacherGauche'))
         
     })
+    const dotSpan3 = document.querySelector('.dotSpan3')
+    dotSpan3.addEventListener('click',(e)=>{
+        console.log(e.currentTarget.classList.add('activeDot'))
 
+    })
+    const transition = document.querySelector(".buttonclik1")
+    transition.addEventListener('click',function(e){
+        const parrent2 = document.querySelector('.div2')
+        parrent2.style.display = 'block'
+        parrent2.style.transitionProperty = 'all'
+        parrent2.style.transitionTimingFunction ='ease'
+        parrent2.style.transitionDuration ='0.1s'
+        parrent2.style.transform = "translate(-5%)"
+        console.log(getComputedStyle(parrent2).display)
+        console.log(getComputedStyle(parrent2).transitionTimingFunction)
+        console.log(getComputedStyle(parrent2).transform)
+
+        
+    })
+    const transition2 = document.querySelector(".buttonclik2")
+    transition2.addEventListener('click',function(e){
+        const parrent = document.querySelector('.satisfaction__container')
+        console.log(parrent.classList.add('vi'))
+        const color = parrent.styles.display
+        console.log(color)
+    })
 
 
 

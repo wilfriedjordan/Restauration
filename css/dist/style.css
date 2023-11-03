@@ -35,7 +35,7 @@ header.header .header__message {
   margin: 3.43rem 5.62rem;
 }
 header.header .header__message h3 {
-  font-size: 3.8rem;
+  font-size: 3.6rem;
   font-family: "Dancing Script", "Montserrat";
   font-weight: 500;
 }
@@ -57,40 +57,28 @@ header.header .header__message div.span {
 }
 header.header .header__message div.span span.dot {
   position: absolute;
-  width: 0.8rem;
-  height: 0.8rem;
+  width: 1rem;
+  height: 1rem;
   top: 3.12rem;
   left: 1.56rem;
-  filter: contrast(15px);
+  filter: blur();
+  background-color: #ffffff;
   border-radius: 1.56rem;
   animation: point 2.8s infinite;
 }
 header.header .header__message div.span span {
   display: block;
   float: left;
-  width: 0.8rem;
-  cursor: pointer;
-  height: 0.8rem;
-  background-color: #d3930a;
-  margin-left: 0.5rem;
-  filter: contrast(0.9px);
+  width: 1rem;
+  height: 1rem;
+  background-color: #ffffff;
+  margin-left: 0.2rem;
   border-radius: 1.56rem;
   position: relative;
   top: 3.12rem;
-  left: 3.6rem;
-  animation: points 2.8s infinite;
+  left: 2.8rem;
 }
 
-@keyframes point {
-  50% {
-    transform: translateX(70px);
-  }
-}
-@keyframes points {
-  50% {
-    transform: translateX(-31px);
-  }
-}
 .header__nav h1 {
   font-family: "Dancing Script", "Montserrat";
   font-size: 2rem;
@@ -135,23 +123,13 @@ header.header .header__message div.span span {
   color: white;
 }
 .header__nav__navbar li :hover {
-  color: rgb(236, 159, 16);
+  color: #ec9f10;
 }
 
 .header__nav__navbar a {
   color: white;
 }
 
-div.animation {
-  line-height: 1.5rem;
-  animation: annimation1 8s infinite;
-}
-
-@keyframes annimation1 {
-  50% {
-    transform: translateX(-800px);
-  }
-}
 /*________________SECTION REJUCTION______________*/
 section.reduction {
   display: flex;
@@ -248,7 +226,7 @@ button.active {
   font-weight: 600;
   border-radius: 1rem;
   width: 24rem;
-  height: 32rem;
+  height: 30rem;
   margin: 18px;
   transition: all 0.2s ease-in-out;
 }
@@ -272,7 +250,7 @@ button.active {
   text-align: center;
 }
 .article__container__row .article-text p.name {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 }
 
 .article__container__row:hover img {
@@ -293,8 +271,7 @@ button.bay {
   width: 2rem;
   border: none;
   color: #ffffff;
-  -webkit-clip-path: circle();
-          clip-path: circle();
+  clip-path: circle();
   position: relative;
   left: 30%;
 }
@@ -426,15 +403,13 @@ section.satisfaction div.satisfaction__container {
   gap: 3rem;
 }
 section.satisfaction div.satisfaction__container img {
-  width: 9rem;
-  -webkit-clip-path: circle(40% at center);
-          clip-path: circle(40% at center);
+  width: 18.75rem;
+  clip-path: circle(40% at center);
 }
 section.satisfaction div.img {
-  width: 9rem;
+  width: 18.75rem;
   background-color: #ffbe33;
-  -webkit-clip-path: circle(41%);
-          clip-path: circle(41%);
+  clip-path: circle(41%);
 }
 section.satisfaction div.img span {
   width: 5rem;
@@ -460,8 +435,7 @@ div.direction .fas-direction {
   width: 3rem;
   height: 3rem;
   background-color: #ffbe33;
-  -webkit-clip-path: circle();
-          clip-path: circle();
+  clip-path: circle();
 }
 
 div.div1 {
@@ -497,7 +471,7 @@ section.footer {
   justify-content: center;
   align-items: center;
   text-align: center;
-  height: 65vh;
+  height: 55vh;
   gap: 5rem;
   font-family: "open sans";
   font-weight: 600;
@@ -520,14 +494,13 @@ section.footer .fas-icons {
   height: 3rem;
   color: #000000;
   background-color: white;
-  -webkit-clip-path: circle();
-          clip-path: circle();
+  clip-path: circle();
 }
 section.footer div.iconContact {
   display: flex;
   gap: 1rem;
   align-items: center;
-  line-height: 1.8rem;
+  line-height: 1.6rem;
 }
 section.footer div.footer__hours {
   padding-bottom: 9rem;
@@ -535,8 +508,3 @@ section.footer div.footer__hours {
 section.footer div.footer__conctact {
   padding-bottom: 8rem;
 }
-
-.activeDot {
-  transform: scale(1.5);
-  background-color: #d3930a;
-}/*# sourceMappingURL=style.css.map */

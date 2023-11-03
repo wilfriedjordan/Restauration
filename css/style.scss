@@ -7,49 +7,95 @@ $white: #ffffff;
 $black: #000000;
 $primary2: #222831;
 $textCol: #1f1f1f;
-$color_default:#ffbe33;;
+$color_default:#ffbe33;
+*{
+    font-family:"Open Sans";
+    font-size:16px;
+}
 li{
     list-style: none;
 }
+
 body{
-    font-size: 16px;
     padding:0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Open Sans';
 }
 /*________________________header____________________*/
 header.header{
     background-image: url("./../images/hero-bg.jpg");
     background-size: cover;
     background-position: center;
-    height: 110vh;
+    height: 98vh;
     color: white;
     .header__message{
-        width: 600px;
+        width: 37.5rem;
         position: relative;
-        top:15%;
+        top:5%;
         font-weight: 600;
-        margin: 55px 90px;
+        margin: 3.43rem 5.62rem;
+        
         h3{
-            font-size: 2.7rem;
+            font-size: 3.8rem;
             font-family: "Dancing Script","Montserrat";
-            font-weight: 700;
+            font-weight: 500;
         }
         a{
-            width: 130px;
+            width: 8.12rem;
             text-transform: capitalize;
             text-align: center;
             display: block;
-            padding: 7px;
+            padding: 0.43rem;
             font-weight:600;
-            border-radius: 20px;
+            border-radius: 1.4rem;
             background-color:$color_default;
         }
+        div.span{
+            margin-top:1.56rem;
+            height: 3rem;
+            height: 8rem;
+            filter: contrast(4);
+            span.dot{
+                position: absolute;
+                width: 0.8rem;
+                height: 0.8rem;
+                top: 3.12rem;
+                left: 1.56rem;
+                filter: contrast(15px);
+                border-radius: 1.56rem;
+                animation: point 2.8s infinite;
+            }
+            span{
+                display: block;
+                float: left;
+                width: 0.8rem;
+                cursor: pointer;
+                height: 0.8rem;
+                background-color:#d3930a;
+                margin-left: 0.5rem ;
+                filter: contrast(0.9px);
+                border-radius: 1.56rem;
+                position: relative;
+                top: 3.12rem;
+                left: 3.6rem;
+                animation: points 2.8s infinite;
+            }
+        }
+    }
+}
+@keyframes point {
+    50%{
+        transform: translateX(70px);
+    }
+}
+@keyframes points {
+    50%{
+        transform: translateX(-31px);
     }
 }
 .header__nav h1{
     font-family:'Dancing Script',"Montserrat" ;
+    font-size:2rem;
 }
 .header__nav{
     display: flex;
@@ -95,6 +141,17 @@ header.header{
 .header__nav__navbar a{
     color:white ;
 
+}
+
+//Annimation du Header
+div.animation{
+    line-height: 1.5rem;
+    animation: annimation1 8s infinite ;
+}
+@keyframes annimation1 {
+    50%{
+        transform: translateX(-800px);
+    }
 }
 /*________________SECTION REJUCTION______________*/
 section.reduction{
@@ -155,7 +212,7 @@ section.article{
         justify-content: center;
         text-align: center;
         
-        h1{
+        h2{
             font-size: 2.7rem;
             font-weight: 700;
             font-family: "Dancing Script";    
@@ -191,7 +248,7 @@ button.active{
     font-weight: 600;
     border-radius: 1rem;
     width: 24rem;
-    height: 30rem;
+    height: 32rem;
     margin: 18px;
     transition: all 0.2s ease-in-out;
     .article-img{
@@ -213,7 +270,7 @@ button.active{
         font-size: 0.8rem;
         text-align: center;
         p.name{
-            font-size: 1.6rem;
+            font-size: 1.8rem;
         }
     }
 }
@@ -351,7 +408,6 @@ form button{
 /*_________________section satisfaction_________*/
 
 section.satisfaction{
-    transition: all 0.2s ease-in-out infinite;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -365,13 +421,13 @@ section.satisfaction{
         display: flex;
         gap: 3rem;
         img{
-            width: 18.75rem;
+            width: 9rem;
             clip-path: circle(40% at center);
         }
 
     }
     div.img{
-        width: 18.75rem;
+        width: 9rem;
         background-color: #ffbe33;
         clip-path: circle(41%);
         span{
@@ -402,7 +458,80 @@ div.direction{
         clip-path: circle();
     }
 }
-.active{
-    transition: all 0.2s ease-in-out infinite;
+div.div1{
+    transition: position 25s ease-in-out infinite;
+    transition-timing-function: steps(7, end);
+    position: relative;
+}
+div.div2{
+    position: absolute;
+    transition: position 25s ease-in-out infinite;
+    transition-timing-function: steps(5, end);
+    transform:translateX(110%) ;
+    display: none;
+    
+
+}
+//Affichage des transition et annimations
+.cacherGauche{
+    transition: all ease infinite;
+    transition-duration: 0.8s;
     transform:translate(-110%,0%);
+}
+.visibiliter{
+    transition: all ease infinite;
+    transition-duration: 1s;
+    transform:translateX(-85858%);
+    display: block;
+}
+
+/*_____________________section Footer__________*/
+
+section.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 65vh;
+    gap: 5rem;
+    font-family: 'open sans';
+    font-weight: 600;
+    font-size: 0.8rem;
+    background-color: $textCol;
+    color: $white;
+    h4{
+        font-size: 2rem;
+        font-family: "Dancing Script";
+    }
+    .footer__link{
+        width: 300px;
+    }
+
+    .fas-icons{
+        font-size: 1.2rem;
+        color: $white;
+        padding-top: 1.8rem;
+        width: 2rem;
+        height: 3rem;
+        color: #000000;
+        background-color: white;
+        clip-path: circle();
+    }
+
+    div.iconContact{
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        line-height: 1.8rem;
+    }
+    div.footer__hours{
+        padding-bottom: 9rem;
+    }
+    div.footer__conctact{
+        padding-bottom: 8rem;
+    }
+}
+.activeDot{
+    transform: scale(1.5);
+    background-color: #d3930a;
 }
