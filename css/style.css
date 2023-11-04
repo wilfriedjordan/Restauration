@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&family=Montserrat:wght@200&family=Open+Sans:ital,wght@1,300&display=swap");
 a {
   text-decoration: none;
@@ -63,7 +64,7 @@ header.header .header__message div.span span.dot {
   left: 1.56rem;
   filter: contrast(15px);
   border-radius: 1.56rem;
-  animation: point 2.8s infinite;
+  animation: point 8s infinite;
 }
 header.header .header__message div.span span {
   display: block;
@@ -78,7 +79,7 @@ header.header .header__message div.span span {
   position: relative;
   top: 3.12rem;
   left: 3.6rem;
-  animation: points 2.8s infinite;
+  animation: points 8s infinite;
 }
 
 @keyframes point {
@@ -88,7 +89,7 @@ header.header .header__message div.span span {
 }
 @keyframes points {
   50% {
-    transform: translateX(-31px);
+    transform: translateX(-33px);
   }
 }
 .header__nav h1 {
@@ -104,6 +105,7 @@ header.header .header__message div.span span {
 .header__nav .header__nav__navbar ul {
   display: flex;
   gap: 50px;
+  font-size: 3rem;
 }
 .header__nav .header__nav__navbar ul a.active {
   color: #ffbe33;
@@ -125,6 +127,11 @@ header.header .header__message div.span span {
   font-weight: 600;
   border-radius: 20px;
   background-color: #ffbe33;
+}
+
+div.navi {
+  display: flex;
+  gap: 70px;
 }
 
 .header__nav__navbar li {
@@ -202,9 +209,6 @@ section.reduction .reduction__container img {
 }
 
 /*____________________section articles___________________*/
-section.article {
-  height: 310vh;
-}
 section.article .article__nav {
   display: flex;
   flex-direction: column;
@@ -227,8 +231,8 @@ button.article__nav__btn {
 button.active {
   background-color: #000000;
   color: #ffffff;
-  width: 3.25rem;
-  height: 1.68rem;
+  width: 4.3rem;
+  height: 2rem;
   border-radius: 1.7rem;
 }
 
@@ -318,6 +322,7 @@ section.about {
   color: white;
   display: flex;
   height: 800px;
+  margin-top: 100px;
   justify-content: center;
   align-items: center;
   gap: 80px;
@@ -539,4 +544,601 @@ section.footer div.footer__conctact {
 .activeDot {
   transform: scale(1.5);
   background-color: #d3930a;
+}
+
+@media screen and (max-width: 1320px) {
+  /* règles CSS à appliquer lorsque la largeur de l'écran est inférieure ou égale à 1250px */
+  header div.header__nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  header div.header__nav .header__nav__navbar ul {
+    display: flex;
+    gap: 20px;
+    font-size: 1rem;
+  }
+  .article__container__row {
+    align-items: center;
+    background-color: #000000;
+    font-size: 0.7rem;
+    font-weight: 600;
+    border-radius: 1rem;
+    width: 20rem;
+    height: 28rem;
+    margin: 13px;
+    transition: all 0.2s ease-in-out;
+  }
+  .article__container__row .article-img {
+    background-color: #f3f3f3;
+    height: 10rem;
+    border: none;
+    width: 100%;
+    border-radius: 0.3rem 0.3rem 0rem 2rem;
+    text-align: center;
+  }
+  .article__container__row .article-img img {
+    width: 9rem;
+    height: 6rem;
+    padding: 2rem;
+  }
+  .article__container__row .article-text {
+    padding: 0.5rem;
+    color: #ffffff;
+    font-size: 0.6rem;
+    text-align: center;
+  }
+  .article__container__row .article-text p.name {
+    font-size: 1.6rem;
+  }
+  section.reduction .reduction__container {
+    display: flex;
+    height: 12rem;
+    width: 30rem;
+    font-size: 1.3rem;
+    font-family: "Dancing Script";
+    border-radius: 10px;
+    font-weight: 500;
+    padding: 1rem;
+    background-color: #1f1f1f;
+    transition: all 0.2s ease-in-out;
+  }
+  section.satisfaction div.message {
+    width: 30rem;
+    background-color: #1f1f1f;
+    color: white;
+    padding: 0.1rem 1rem;
+    border-radius: 0.5rem;
+  }
+}
+@media screen and (max-width: 1092px) {
+  /* règles CSS à appliquer lorsque la largeur de l'écran est inférieure ou égale à 1092px */
+  section.reduction .reduction__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 8px;
+    text-align: center;
+    justify-content: center;
+    height: 18rem;
+    width: 16rem;
+    font-size: 1.3rem;
+    font-family: "Dancing Script";
+    border-radius: 10px;
+    font-weight: 500;
+    padding: 1.9rem;
+    background-color: #1f1f1f;
+    transition: all 0.2s ease-in-out;
+  }
+  .article__container__row {
+    align-items: center;
+    background-color: #000000;
+    font-size: 0.7rem;
+    font-weight: 600;
+    border-radius: 1rem;
+    width: 18rem;
+    height: 28rem;
+    margin: 8px;
+    transition: all 0.2s ease-in-out;
+  }
+  .article__container__row .article-img {
+    background-color: #f3f3f3;
+    height: 10rem;
+    border: none;
+    width: 100%;
+    border-radius: 0.3rem 0.3rem 0rem 2rem;
+    text-align: center;
+  }
+  .article__container__row .article-img img {
+    width: 8rem;
+    height: 5rem;
+    padding: 2rem;
+  }
+  .article-text {
+    padding: 0.5rem;
+    color: #ffffff;
+    font-size: 0.4rem;
+    text-align: center;
+  }
+  .article-text p.name {
+    font-size: 1.6rem;
+  }
+  section.satisfaction div.message {
+    width: 21rem;
+    background-color: #1f1f1f;
+    color: white;
+    padding: 0.1rem 1rem;
+    border-radius: 0.5rem;
+  }
+  section.about {
+    background-color: #1f1f1f;
+    color: white;
+    display: flex;
+    height: 800px;
+    margin-top: 100px;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+  }
+  section.about .about__image {
+    height: 42rem;
+  }
+  section.about .about__image img {
+    height: 70%;
+  }
+  section.about .about__container {
+    font-size: 1rem;
+    line-height: 1.7rem;
+    font-weight: 600;
+    width: 500px;
+  }
+  section.about .about__container h2 {
+    font-family: "Dancing Script";
+    font-size: 2.7rem;
+  }
+  section.about .about__container a {
+    width: 8.125rem;
+    text-transform: capitalize;
+    text-align: center;
+    display: block;
+    padding: 0.43rem;
+    font-weight: 600;
+    font-family: "Open Sans";
+    border-radius: 1.25rem;
+    background-color: #ffbe33;
+  }
+}
+@media screen and (max-width: 1024px) {
+  /* règles CSS à appliquer lorsque la largeur de l'écran est inférieure ou égale à 1024px */
+  .article__container {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 33rem);
+    margin: 2rem 3rem;
+    align-items: center;
+  }
+  .article__container__row {
+    align-items: center;
+    background-color: #000000;
+    font-size: 0.7rem;
+    font-weight: 600;
+    border-radius: 1rem;
+    width: 24rem;
+    height: 32rem;
+    margin: 13px;
+    transition: all 0.2s ease-in-out;
+  }
+  .article__container__row .article-img {
+    background-color: #f3f3f3;
+    height: 14rem;
+    border: none;
+    width: 100%;
+    border-radius: 0.3rem 0.3rem 0rem 2rem;
+    text-align: center;
+  }
+  .article__container__row .article-img img {
+    width: 11rem;
+    height: 8rem;
+    padding: 2rem;
+  }
+  .article__container__row .article-text {
+    padding: 0.7rem;
+    color: #ffffff;
+    font-size: 0.8rem;
+    text-align: center;
+  }
+  .article__container__row .article-text p.name {
+    font-size: 1.8rem;
+  }
+  section.about {
+    background-color: #1f1f1f;
+    color: white;
+    display: flex;
+    height: 800px;
+    margin-top: 100px;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+  }
+  section.about .about__image {
+    height: 40rem;
+  }
+  section.about .about__image img {
+    height: 70%;
+  }
+  section.about .about__container {
+    font-size: 1rem;
+    line-height: 1.7rem;
+    font-weight: 600;
+    width: 500px;
+  }
+  section.about .about__container h2 {
+    font-family: "Dancing Script";
+    font-size: 2.7rem;
+  }
+  section.about .about__container a {
+    width: 8.125rem;
+    text-transform: capitalize;
+    text-align: center;
+    display: block;
+    padding: 0.43rem;
+    font-weight: 600;
+    font-family: "Open Sans";
+    border-radius: 1.25rem;
+    background-color: #ffbe33;
+  }
+}
+@media screen and (max-width: 924px) {
+  /* règles CSS à appliquer lorsque la largeur de l'écran est inférieure ou égale à 924px */
+  .article__container__row {
+    align-items: center;
+    background-color: #000000;
+    font-size: 0.7rem;
+    font-weight: 600;
+    border-radius: 1rem;
+    width: 20rem;
+    height: 28.6rem;
+    margin: 8px;
+    transition: all 0.2s ease-in-out;
+  }
+  .article__container__row .article-img {
+    background-color: #f3f3f3;
+    height: 10rem;
+    border: none;
+    width: 100%;
+    border-radius: 0.3rem 0.3rem 0rem 2rem;
+    text-align: center;
+  }
+  .article__container__row .article-img img {
+    width: 8rem;
+    height: 5rem;
+    padding: 2rem;
+  }
+  section.satisfaction div.message {
+    width: 15rem;
+    background-color: #1f1f1f;
+    color: white;
+    padding: 0.1rem 1rem;
+    border-radius: 0.5rem;
+  }
+  section.footer {
+    gap: 1rem;
+  }
+}
+@media screen and (max-width: 780px) {
+  /* règles CSS à appliquer lorsque la largeur de l'écran est inférieure ou égale à 924px */
+  section.reduction .reduction__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 8px;
+    text-align: center;
+    justify-content: center;
+    height: 18rem;
+    width: 12rem;
+    font-size: 1.3rem;
+    font-family: "Dancing Script";
+    border-radius: 10px;
+    font-weight: 500;
+    padding: 1.9rem;
+    background-color: #1f1f1f;
+    transition: all 0.2s ease-in-out;
+  }
+  .article__container__row {
+    align-items: center;
+    background-color: #000000;
+    font-size: 0.7rem;
+    font-weight: 600;
+    border-radius: 1rem;
+    width: 16rem;
+    height: 30rem;
+    margin: 10px;
+    transition: all 0.2s ease-in-out;
+  }
+  .article__container__row .article-img {
+    background-color: #f3f3f3;
+    height: 10rem;
+    border: none;
+    width: 100%;
+    border-radius: 0.3rem 0.3rem 0rem 2rem;
+    text-align: center;
+  }
+  .article__container__row .article-img img {
+    width: 8rem;
+    height: 5rem;
+    padding: 2rem;
+  }
+  .article__container__row .article-text {
+    padding: 0.5rem;
+    color: #ffffff;
+    font-size: 0.6rem;
+    text-align: center;
+  }
+  .article__container__row .article-text p.name {
+    font-size: 1.2rem;
+  }
+  section.about {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2px;
+  }
+  section.about .about__container {
+    padding-top: 17rem;
+  }
+  section.about .about__image {
+    height: 42rem;
+  }
+  section.about .about__image img {
+    height: 50%;
+  }
+  section.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 146vh;
+    gap: 5rem;
+    font-family: "open sans";
+    font-weight: 600;
+    font-size: 0.8rem;
+    background-color: #1f1f1f;
+    color: #ffffff;
+  }
+  section.footer h4 {
+    font-size: 2rem;
+    position: relative;
+    top: 2rem;
+    font-family: "Dancing Script";
+  }
+  section.footer .footer__link {
+    width: 300px;
+    position: relative;
+    bottom: 15rem;
+  }
+  section.footer .fas-icons {
+    font-size: 1.2rem;
+    color: #ffffff;
+    padding-top: 0.7rem;
+    width: 2rem;
+    height: 2rem;
+    color: #000000;
+    background-color: white;
+    -webkit-clip-path: circle();
+            clip-path: circle();
+  }
+  section.footer div.iconContact {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    line-height: 1.8rem;
+  }
+  section.footer div.footer__hours {
+    position: relative;
+    bottom: 23rem;
+  }
+  section.footer div.footer__conctact {
+    padding-top: 25rem;
+  }
+}
+@media screen and (max-width: 659px) {
+  /* règles CSS à appliquer lorsque la largeur de l'écran est inférieure ou égale à 924px */
+  section.reduction {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 23px;
+    height: 60vh;
+    color: #ffffff;
+    position: relative;
+    top: 4rem;
+  }
+  section.reduction .reduction__container {
+    display: flex;
+    flex-direction: row;
+    height: 17rem;
+    width: 32rem;
+    font-size: 1.3rem;
+    font-family: "Dancing Script";
+    border-radius: 10px;
+    font-weight: 500;
+    padding: 1rem;
+    background-color: #1f1f1f;
+    transition: all 0.2s ease-in-out;
+  }
+  .article__nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    top: 3rem;
+  }
+  .article__nav h2 {
+    font-size: 2.7rem;
+    font-weight: 700;
+    position: relative;
+    top: 2rem;
+    font-family: "Dancing Script";
+  }
+  .header__message {
+    width: 29rem;
+    position: relative;
+    top: 5%;
+    font-weight: 600;
+    margin: 3.43rem 5.62rem;
+  }
+  .article__container__row {
+    align-items: center;
+    background-color: #000000;
+    font-size: 0.7rem;
+    font-weight: 600;
+    border-radius: 1rem;
+    width: 13rem;
+    height: 30rem;
+    margin: 10px;
+    transition: all 0.2s ease-in-out;
+  }
+  .article__container__row .article-img {
+    background-color: #f3f3f3;
+    height: 10rem;
+    border: none;
+    width: 100%;
+    border-radius: 0.3rem 0.3rem 0rem 2rem;
+    text-align: center;
+  }
+  .article__container__row .article-img img {
+    width: 8rem;
+    height: 5rem;
+    padding: 2rem;
+  }
+  .article__container__row .article-text {
+    padding: 0.5rem;
+    color: #ffffff;
+    font-size: 0.3rem;
+    text-align: center;
+  }
+  .article__container__row .article-text p.name {
+    font-size: 1.2rem;
+  }
+  section.satisfaction div.message {
+    width: 10rem;
+    background-color: #1f1f1f;
+    color: white;
+    padding: 0.1rem 1rem;
+    border-radius: 0.5rem;
+  }
+}
+@media screen and (max-width: 564px) {
+  /* règles CSS à appliquer lorsque la largeur de l'écran est inférieure ou égale à 924px */
+  section.reduction {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 23px;
+    height: 60vh;
+    color: #ffffff;
+    position: relative;
+    top: 4rem;
+  }
+  section.reduction .reduction__container {
+    display: flex;
+    height: 17rem;
+    width: 20rem;
+    font-size: 1.3rem;
+    font-family: "Dancing Script";
+    border-radius: 10px;
+    font-weight: 500;
+    padding: 1rem;
+    background-color: #1f1f1f;
+    transition: all 0.2s ease-in-out;
+  }
+  .article__container {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(9, 33rem);
+    margin: 2rem 3rem;
+    align-items: center;
+  }
+  .article__container__row {
+    align-items: center;
+    background-color: #000000;
+    font-size: 0.7rem;
+    font-weight: 600;
+    border-radius: 1rem;
+    width: 24rem;
+    height: 32rem;
+    margin: 18px;
+    transition: all 0.2s ease-in-out;
+  }
+  .article__container__row .article-img {
+    background-color: #f3f3f3;
+    height: 14rem;
+    border: none;
+    width: 100%;
+    border-radius: 0.3rem 0.3rem 0rem 2rem;
+    text-align: center;
+  }
+  .article__container__row .article-img img {
+    width: 11rem;
+    height: 8rem;
+    padding: 3rem;
+  }
+  .article__container__row .article-text {
+    padding: 0.7rem;
+    color: #ffffff;
+    font-size: 0.8rem;
+    text-align: center;
+  }
+  .article__container__row .article-text p.name {
+    font-size: 1.8rem;
+  }
+  .about__container {
+    line-height: 1.7rem;
+    font-weight: 600;
+    width: 100px;
+  }
+  .about__container h2 {
+    font-family: "Dancing Script";
+    font-size: 12rem;
+  }
+  section.satisfaction {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  div.satisfaction__container {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+  div.satisfaction__container img {
+    width: 9rem;
+    -webkit-clip-path: circle(40% at center);
+            clip-path: circle(40% at center);
+  }
+  section.satisfaction div.message {
+    width: 15rem;
+    background-color: #1f1f1f;
+    color: white;
+    padding: 0.1rem 1rem;
+    border-radius: 0.5rem;
+  }
+  section.footer {
+    height: 158vh;
+  }
+}
+@media screen and (max-width: 843px) {
+  header div.navi {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */

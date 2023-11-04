@@ -63,7 +63,7 @@ header.header{
                 left: 1.56rem;
                 filter: contrast(15px);
                 border-radius: 1.56rem;
-                animation: point 2.8s infinite;
+                animation: point 8s infinite;
             }
             span{
                 display: block;
@@ -78,7 +78,7 @@ header.header{
                 position: relative;
                 top: 3.12rem;
                 left: 3.6rem;
-                animation: points 2.8s infinite;
+                animation: points 8s infinite;
             }
         }
     }
@@ -90,7 +90,7 @@ header.header{
 }
 @keyframes points {
     50%{
-        transform: translateX(-31px);
+        transform: translateX(-33px);
     }
 }
 .header__nav h1{
@@ -104,6 +104,7 @@ header.header{
     .header__nav__navbar ul{
         display: flex;
         gap: 50px;
+        font-size: 3rem;
     }
     .header__nav__navbar ul a.active{
         color: $color_default;
@@ -127,6 +128,10 @@ header.header{
         
         }
     }
+}
+div.navi{
+    display: flex;
+    gap: 70px;
 }
 .header__nav__navbar li{
     font-size: 17px;
@@ -204,7 +209,7 @@ section.reduction{
 /*____________________section articles___________________*/
 
 section.article{
-    height:310vh;
+    //height:auto !important;
     .article__nav{
         display:flex ;
         flex-direction: column;
@@ -227,8 +232,8 @@ button.article__nav__btn{
 button.active{
     background-color: $black;
     color: #ffffff;
-    width: 3.25rem;
-    height: 1.68rem;
+    width: 4.3rem;
+    height: 2rem;
     border-radius: 1.7rem;
 }
 .article__container{
@@ -312,6 +317,7 @@ section.about{
     color: white;
     display: flex;
     height: 800px;
+    margin-top: 100px;
     justify-content: center;
     align-items: center;
     gap: 80px;
@@ -342,7 +348,6 @@ section.about{
             background-color:$color_default;
         }
     }
-
 }
 
 /*_________________section localisation_________________________*/
@@ -424,7 +429,6 @@ section.satisfaction{
             width: 9rem;
             clip-path: circle(40% at center);
         }
-
     }
     div.img{
         width: 9rem;
@@ -534,4 +538,624 @@ section.footer{
 .activeDot{
     transform: scale(1.5);
     background-color: #d3930a;
+}
+
+//Responsive
+@media screen and (max-width: 1320px) {
+    /* règles CSS à appliquer lorsque la largeur de l'écran est inférieure ou égale à 1250px */
+    header{
+        div.header__nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            .header__nav__navbar ul{
+                display: flex;
+                gap: 20px;
+                font-size: 1rem;
+            }
+        }
+    }
+    .article__container__row{
+        align-items: center;
+        background-color: $black;
+        font-size: 0.7rem ;
+        font-weight: 600;
+        border-radius: 1rem;
+        width: 20rem;
+        height: 28rem;
+        margin: 13px;
+        transition: all 0.2s ease-in-out;
+        .article-img{
+            background-color: #f3f3f3;
+            height: 10rem;
+            border: none;
+            width: 100%;
+            border-radius: 0.3rem 0.3rem 0rem 2rem ;
+            img{
+                width: 9rem;
+                height: 6rem;
+                padding: 2rem;
+            }
+            text-align: center;
+        }
+        .article-text{
+            padding: 0.5rem;
+            color: #ffffff;
+            font-size: 0.6rem;
+            text-align: center;
+            p.name{
+                font-size: 1.6rem;
+            }
+        }
+    }
+    section.reduction {
+        .reduction__container{
+            display: flex;
+            height: 12rem;
+            width: 30rem;
+            font-size: 1.3rem;
+            font-family: "Dancing Script";
+            border-radius: 10px;
+            font-weight: 500;        
+            padding: 1rem;
+            background-color: $textCol;
+            transition: all 0.2s ease-in-out;
+        }
+    }
+
+    section.satisfaction div.message{
+        width: 30rem;
+        background-color: $textCol;
+        color: white;
+        padding: 0.1rem 1rem;
+        border-radius: 0.5rem;
+    }
+}
+
+
+@media screen and (max-width: 1092px){
+    /* règles CSS à appliquer lorsque la largeur de l'écran est inférieure ou égale à 1092px */
+    section.reduction {
+        .reduction__container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 8px;
+            text-align: center;
+            justify-content: center;
+            height: 18rem;
+            width: 16rem;
+            font-size: 1.3rem;
+            font-family: "Dancing Script";
+            border-radius: 10px;
+            font-weight: 500;        
+            padding: 1.9rem;
+            background-color: $textCol;
+            transition: all 0.2s ease-in-out;
+        }
+    }
+    .article__container__row{
+        align-items: center;
+        background-color: $black;
+        font-size: 0.7rem ;
+        font-weight: 600;
+        border-radius: 1rem;
+        width: 18rem;
+        height: 28rem;
+        margin: 8px;
+        transition: all 0.2s ease-in-out;
+        .article-img{
+            background-color: #f3f3f3;
+            height: 10rem;
+            border: none;
+            width: 100%;
+            border-radius: 0.3rem 0.3rem 0rem 2rem ;
+            text-align: center;
+            img{
+                width: 8rem;
+                height: 5rem;
+                padding: 2rem;
+            }
+        }
+    }
+    .article-text{
+        padding: 0.5rem;
+        color: #ffffff;
+        font-size: 0.4rem;
+        text-align: center;
+        p.name{
+            font-size: 1.6rem;
+        }
+    }
+    section.satisfaction div.message{
+        width: 21rem;
+        background-color: $textCol;
+        color: white;
+        padding: 0.1rem 1rem;
+        border-radius: 0.5rem;
+    }
+    section.about{
+        background-color: $textCol;
+        color: white;
+        display: flex;
+        height: 800px;
+        margin-top: 100px;
+        justify-content: center;
+        align-items: center;
+        gap: 80px;
+        .about__image{
+            height: 42rem;
+            img{
+                height: 70%;
+            }
+        }
+        .about__container{
+            font-size: 1rem;
+            line-height: 1.7rem;
+            font-weight: 600;
+            width: 500px;
+            h2{
+                font-family: "Dancing Script";
+                font-size: 2.7rem;
+            }
+            a{
+                width: 8.125rem;
+                text-transform: capitalize;
+                text-align: center;
+                display: block;
+                padding: 0.43rem;
+                font-weight:600;
+                font-family: "Open Sans";
+                border-radius: 1.25rem;
+                background-color:$color_default;
+            }
+        }
+    }
+}
+@media screen and (max-width: 1024px){
+    /* règles CSS à appliquer lorsque la largeur de l'écran est inférieure ou égale à 1024px */
+    .article__container{
+        margin-top: 4rem;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(5 , 33rem);
+        margin: 2rem 3rem;
+        align-items: center; 
+    }
+    .article__container__row{
+        align-items: center;
+        background-color: $black;
+        font-size: 0.7rem ;
+        font-weight: 600;
+        border-radius: 1rem;
+        width: 24rem;
+        height: 32rem;
+        margin: 13px;
+        transition: all 0.2s ease-in-out;
+        .article-img{
+            background-color: #f3f3f3;
+            height: 14rem;
+            border: none;
+            width: 100%;
+            border-radius: 0.3rem 0.3rem 0rem 2rem ;
+            img{
+                width: 11rem;
+                height: 8rem;
+                padding: 2rem;
+            }
+            text-align: center;
+        }
+        .article-text{
+            padding: 0.7rem;
+            color: #ffffff;
+            font-size: 0.8rem;
+            text-align: center;
+            p.name{
+                font-size: 1.8rem;
+            }
+        }
+    }
+    section.about{
+        background-color: $textCol;
+        color: white;
+        display: flex;
+        height: 800px;
+        margin-top: 100px;
+        justify-content: center;
+        align-items: center;
+        gap: 80px;
+        .about__image{
+            height: 40rem;
+            img{
+                height: 70%;
+            }
+        }
+        .about__container{
+            font-size: 1rem;
+            line-height: 1.7rem;
+            font-weight: 600;
+            width: 500px;
+            h2{
+                font-family: "Dancing Script";
+                font-size: 2.7rem;
+            }
+            a{
+                width: 8.125rem;
+                text-transform: capitalize;
+                text-align: center;
+                display: block;
+                padding: 0.43rem;
+                font-weight:600;
+                font-family: "Open Sans";
+                border-radius: 1.25rem;
+                background-color:$color_default;
+            }
+        }
+    }
+
+}
+@media screen and (max-width: 924px){
+    /* règles CSS à appliquer lorsque la largeur de l'écran est inférieure ou égale à 924px */
+    .article__container__row{
+        align-items: center;
+        background-color: $black;
+        font-size: 0.7rem ;
+        font-weight: 600;
+        border-radius: 1rem;
+        width: 20rem;
+        height: 28.6rem;
+        margin: 8px;
+        transition: all 0.2s ease-in-out;
+        .article-img{
+            background-color: #f3f3f3;
+            height: 10rem;
+            border: none;
+            width: 100%;
+            border-radius: 0.3rem 0.3rem 0rem 2rem ;
+            text-align: center;
+            img{
+                width: 8rem;
+                height: 5rem;
+                padding: 2rem;
+            }
+        }
+    }
+    section.satisfaction div.message{
+        width: 15rem;
+        background-color: $textCol;
+        color: white;
+        padding: 0.1rem 1rem;
+        border-radius: 0.5rem;
+    }
+    section.footer{
+        gap: 1rem;
+    }
+
+}
+
+@media screen and (max-width:780px) {
+    /* règles CSS à appliquer lorsque la largeur de l'écran est inférieure ou égale à 924px */
+    section.reduction {
+        .reduction__container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 8px;
+            text-align: center;
+            justify-content: center;
+            height: 18rem;
+            width: 12rem;
+            font-size: 1.3rem;
+            font-family: "Dancing Script";
+            border-radius: 10px;
+            font-weight: 500;        
+            padding: 1.9rem;
+            background-color: $textCol;
+            transition: all 0.2s ease-in-out;
+        }
+    }
+    .article__container__row{
+        align-items: center;
+        background-color: $black;
+        font-size: 0.7rem ;
+        font-weight: 600;
+        border-radius: 1rem;
+        width: 16rem;
+        height: 30rem;
+        margin: 10px;
+        transition: all 0.2s ease-in-out;
+        .article-img{
+            background-color: #f3f3f3;
+            height: 10rem;
+            border: none;
+            width: 100%;
+            border-radius: 0.3rem 0.3rem 0rem 2rem ;
+            text-align: center;
+            img{
+                width: 8rem;
+                height: 5rem;
+                padding: 2rem;
+            }
+        }
+        .article-text{
+            padding: 0.5rem;
+            color: #ffffff;
+            font-size: 0.6rem;
+            text-align: center;
+            p.name{
+                font-size: 1.2rem;
+            }
+        }
+    }
+    section.about{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 2px;
+        .about__container{
+            padding-top:17rem ;
+        }
+        .about__image{
+            height: 42rem;
+            img{
+                height: 50%;
+            }
+        }
+    }
+    section.footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 146vh;
+        gap: 5rem;
+        font-family: 'open sans';
+        font-weight: 600;
+        font-size: 0.8rem;
+        background-color: $textCol;
+        color: $white;
+        h4{
+            font-size: 2rem;
+            position: relative;
+            top: 2rem;
+            font-family: "Dancing Script";
+        }
+        .footer__link{
+            width: 300px;
+            position: relative;
+            bottom: 15rem;
+        }
+    
+        .fas-icons{
+            font-size: 1.2rem;
+            color: $white;
+            padding-top: 0.7rem;
+            width: 2rem;
+            height: 2rem;
+            color: #000000;
+            background-color: white;
+            clip-path: circle();
+        }
+    
+        div.iconContact{
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            line-height: 1.8rem;
+        }
+        div.footer__hours{
+            position: relative;
+            bottom: 23rem;
+        }
+        div.footer__conctact{
+            padding-top: 25rem;
+        }
+    }
+
+}
+
+@media screen and (max-width:659px){
+    /* règles CSS à appliquer lorsque la largeur de l'écran est inférieure ou égale à 924px */
+    section.reduction{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 23px;
+        height: 60vh;
+        color:$white;
+        position: relative;
+        top: 4rem;
+        .reduction__container{
+            display: flex;
+            flex-direction: row;
+            height: 17rem;
+            width: 32rem;
+            font-size: 1.3rem;
+            font-family: "Dancing Script";
+            border-radius: 10px;
+            font-weight: 500;        
+            padding: 1rem;
+            background-color: $textCol;
+            transition: all 0.2s ease-in-out;
+            }
+        }
+        .article__nav{
+            display:flex ;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            top: 3rem;
+            
+            h2{
+                font-size: 2.7rem;
+                font-weight: 700;
+                position: relative;
+                top: 2rem;
+                font-family: "Dancing Script";    
+            }
+        }
+        .header__message{
+            width: 29rem;
+            position: relative;
+            top:5%;
+            font-weight: 600;
+            margin: 3.43rem 5.62rem;
+
+        }
+    
+    .article__container__row{
+        align-items: center;
+        background-color: $black;
+        font-size: 0.7rem ;
+        font-weight: 600;
+        border-radius: 1rem;
+        width: 13rem;
+        height: 30rem;
+        margin: 10px;
+        transition: all 0.2s ease-in-out;
+        .article-img{
+            background-color: #f3f3f3;
+            height: 10rem;
+            border: none;
+            width: 100%;
+            border-radius: 0.3rem 0.3rem 0rem 2rem ;
+            text-align: center;
+            img{
+                width: 8rem;
+                height: 5rem;
+                padding: 2rem;
+            }
+        }
+        .article-text{
+            padding: 0.5rem;
+            color: #ffffff;
+            font-size: 0.3rem;
+            text-align: center;
+            p.name{
+                font-size: 1.2rem;
+            }
+        }
+    }
+    section.satisfaction div.message{
+        width: 10rem;
+        background-color: $textCol;
+        color: white;
+        padding: 0.1rem 1rem;
+        border-radius: 0.5rem;
+    }
+
+}
+@media screen and (max-width: 564px){
+    /* règles CSS à appliquer lorsque la largeur de l'écran est inférieure ou égale à 924px */
+    section.reduction{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 23px;
+        height: 60vh;
+        color:$white;
+        position: relative;
+        top: 4rem;
+        .reduction__container{
+            display: flex;
+            height: 17rem;
+            width: 20rem;
+            font-size: 1.3rem;
+            font-family: "Dancing Script";
+            border-radius: 10px;
+            font-weight: 500;        
+            padding: 1rem;
+            background-color: $textCol;
+            transition: all 0.2s ease-in-out;
+        }
+    }
+    .article__container{
+        margin-top: 4rem;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(9 , 33rem);
+        margin: 2rem 3rem;
+        align-items: center; 
+    }
+    .article__container__row{
+        align-items: center;
+        background-color: $black;
+        font-size: 0.7rem ;
+        font-weight: 600;
+        border-radius: 1rem;
+        width: 24rem;
+        height: 32rem;
+        margin: 18px;
+        transition: all 0.2s ease-in-out;
+        .article-img{
+            background-color: #f3f3f3;
+            height: 14rem;
+            border: none;
+            width: 100%;
+            border-radius: 0.3rem 0.3rem 0rem 2rem ;
+            img{
+                width: 11rem;
+                height: 8rem;
+                padding: 3rem;
+            }
+            text-align: center;
+        }
+        .article-text{
+            padding: 0.7rem;
+            color: #ffffff;
+            font-size: 0.8rem;
+            text-align: center;
+            p.name{
+                font-size: 1.8rem;
+            }
+        }
+    }
+    .about__container{
+        line-height: 1.7rem;
+        font-weight: 600;
+        width: 100px;
+        h2{
+            font-family: "Dancing Script";
+            font-size: 12rem;
+        }
+    }
+
+    section.satisfaction{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    div.satisfaction__container{
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        img{
+            width: 9rem;
+            clip-path: circle(40% at center);
+        }
+    }
+    section.satisfaction div.message{
+        width: 15rem;
+        background-color: $textCol;
+        color: white;
+        padding: 0.1rem 1rem;
+        border-radius: 0.5rem;
+    }
+    section.footer{
+        height: 158vh;
+    }
+}
+
+@media  screen and (max-width: 843px){
+    header div.navi{
+        display: none;
+    }
 }

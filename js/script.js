@@ -40,6 +40,7 @@ const produits = await reponse.json()
     }
     update(produits)
     //Filtarage des elements
+    const sectionArticle = document.querySelector('.article')
     const All= document.querySelector('.btn1')
     All.addEventListener('click',(e)=>{
         e.currentTarget.parentElement.querySelector('.active').classList.remove('active');
@@ -54,6 +55,13 @@ const produits = await reponse.json()
         const articleFilter1 = produits.filter((produit)=>{
             return produit.category ==='burger'
         })
+        const sectionArticle = document.querySelector(".article__container")
+        sectionArticle.style.height = '60vh'
+        sectionArticle.style.display='grid'
+        sectionArticle.style.marginTop = "300px"
+        sectionArticle.style.gridTemplateColumns='repeat(3,1fr)'
+        sectionArticle.style.gridTemplateRows='repeat(1,33px)'
+        console.log(getComputedStyle(sectionArticle).display)
         document.querySelector(".article__container").innerHTML=""
         update(articleFilter1)
     })
